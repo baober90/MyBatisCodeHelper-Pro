@@ -1,29 +1,32 @@
-## 根据mybatis接口中的方法名生成对应的mapper sql并进行方法补全  支持通用mapper mybatisplus
+## 根据mybatis接口中的方法名生成对应的mapper sql并进行方法补全  支持通用mapper mybatisplus (插件原创功能)
 
 只需要一个方法名 即可 不需要方法和参数 和返回值 输入方法名后 alt+enter Generate mybatis sql 就可以生成了
 
-![findMethodNameToSql](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/findMethodNameToSql.gif)
+![findMethodNameToSql](https://images.brucege.com/findMethodNameToSql.gif)
 
-![updateMethodNameToSql](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/updateMethodNameToSql.gif)
+![updateMethodNameToSql](https://images.brucege.com/updateMethodNameToSql.gif)
 
-![deleteMethodNameToSql](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/deleteMethodNameToSql.gif)
+![deleteMethodNameToSql](https://images.brucege.com/deleteMethodNameToSql.gif)
 
-![countMethodNameToSql](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/countMethodNameToSql.gif)
+![countMethodNameToSql](https://images.brucege.com/countMethodNameToSql.gif)
 
 
 ## 方法名生成sql时支持if test (2.3版本后无需配置 直接alt+enter Generate mybatis sql with if test即可)
 
-![findWithIfTest](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/findWithIfTest.gif)
+![findWithIfTest](https://images.brucege.com/findWithIfTest.gif)
 
 
 ## 一键生成findByAll
 
-![findByAllEE](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/findByAllEE.gif)
+![findByAllEE](https://images.brucege.com/findByAllEE.gif)
 
 
 ## 一键生成insertList
 
-![insertList](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/insertList.gif)
+![insertList](https://images.brucege.com/insertList.gif)
+
+## 支持生成 mybatisplus的queryWrapper
+![methodToQueryWrapper](https://images.brucege.com/MethodNameToMybatisplusWrapper.gif)
 
 ## 使用方法  
 - 在mybatis的接口文件上的方法名(只需要一个名字，不需要返回值和参数 会自动推导出来)上使用alt+enter Generate mybatis sql 或者选中方法名右键来生成
@@ -136,7 +139,7 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 ## 注意的点  
 
 - 使用方法名生成sql 需要在接口中提供一个insert或save或add方法并以表对应的java对象为第一参数 (类似于 insert(User user) 需要通过User来进行方法名的推断) 使用了通用mapper或者mybatisplus的话 不需要insert方法
-- 2.7.5以上版本方法名生成sql不再依赖于insert方法 但需要一个BaseResultMap 里面包含 @Table注释，可以在表上使用mybatis generator来生成好
+- 2.7.5以上版本方法名生成sql不再依赖于insert方法 但需要一个BaseResultMap 里面包含 @Table注释，可以在表上右键使用mybatis generator左下角有个预览xml来生成好
 - 使用方法名生成的sql的字段会从数据库对象对应的resultMap中的数据库字段来设置。
 
 - "please check with your resultMap dose it contain all the property of 
@@ -159,4 +162,4 @@ countDistinctUserNameByIdGreaterThan | select count(distinct(user_name)) from us
 - 我写了find后方法名没有自动提示如何处理?
 
 查看IDEA设置里的completion 是否设置为 firstLetter
-![compele](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/completeSetting.png)
+![compele](https://images.brucege.com/completeSetting.png)

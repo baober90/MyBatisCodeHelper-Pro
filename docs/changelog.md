@@ -1,3 +1,389 @@
+<strong>3.2.9</strong>
+<ul>
+<li>[IMPROVE]kotlin报错优化</li>
+<li>[IMPROVE]支持mybatis ognl单个参数可以使用任意名字引用</li>
+<li>[IMPROVE]提供界面来合并xml代码</li>
+<li>[FIX]select中的column包含点号时添加到java类中报错优化</li>
+</ul>
+<ul>
+<li>[IMPROVE]kotlin exception fix</li>
+<li>[IMPROVE]support ognl use any name for single parameter</li>
+<li>[IMPROVE]provide ui to merge xml</li>
+<li>[FIX]select column with dot exception fix</li>
+</ul>
+<strong>3.2.8</strong>
+<ul>
+<li>[IMPROVE]性能优化，当有大量xml，在创建对应方法的xml后方法没有取消标红问题</li>
+<li>[FIX]2023.3 当查询为select *时 resultMap column的提示和检测</li>
+<li>[FIX]使用kotlin时select字段检测优化</li>
+<li>[FIX]java接口方法返回值类型检测可能出现的null pointer exception</li>
+<li>[IMPROVE]使用Autowire注解替代Resource注解</li>
+</ul>
+<ul>
+<li>[IMPROVE]performance improvement when contain many xml</li>
+<li>[IMPROVE]for 2023.3 version, when select *, resultMap column inspection and auto completion support</li>
+<li>[FIX]select column inspection when resultType is from kotlin</li>
+<li>[FIX]java method return type inspection null pointer</li>
+<li>[IMPROVE]use autowire to replace resource annotation</li>
+</ul>
+<strong>3.2.6</strong>
+<ul>
+<li>[IMPROVE]从sql生成java接口方法的参数会根据字段类型来做判断</li>
+<li>[IMPROVE]java接口方法返回值类型和xml resultType或resultMap不一致时可以快速修复java接口方法返回值类型</li>
+<li>[FIX]从xml生成java类和resultMap报错优化</li>
+<li>[FIX]支持kotlin接口参数为List类型的解析，支持泛型? extends解析</li>
+<li>[FIX]select中查询字段检测优化了resultMap中使用columnPrefix的检测</li>
+<li>[NEW]可以快速添加typeMapper,根据表中未匹配的字段来快速添加</li>
+</ul>
+<ul>
+<li>[IMPROVE]from sql generate mybatis java method param type will based on query column type</li>
+<li>[IMPROVE]provide auto fix on java method return type when java method return type is different to xml resultType or resultmap type</li>
+<li>[FIX]fix exception when use xml generate java class and resultMap</li>
+<li>[FIX]support param completion and inspection when method is using kotlin with List parameter, support ? extend as well</li>
+<li>[FIX]select query column inspection will work when resultmap contains columnPrefix</li>
+<li>[NEW]add typeMapper quicker when table has unmapped columns</li>
+</ul>
+<strong>3.2.5</strong>
+<ul>
+<li>[IMPROVE]可以从resultmap type快速配置typealias</li>
+<li>[NEW]从sql快速生成mybatis的java接口方法和xml</li>
+<li>[NEW]从#{}快速生成if test语句</li>
+<li>[FIX]兼容2023.3 eap版本</li>
+<li>[FIX]修复InvalidElementAccessException</li>
+<li>[IMPROVE]快速修复java接口方法返回类型和xml返回类型不一致</li>
+</ul>
+<ul>
+<li>[IMPROVE]config typeAlias when resultMap type is not found</li>
+<li>[NEW]from sql generate mybatis method and xml, replace value to #{}</li>
+<li>[NEW]add if test for #{}</li>
+<li>[FIX]compatability for 2023.3 eap version</li>
+<li>[FIX]fix InvalidElementAccessException</li>
+<li>[IMPROVE]quick fix for java method return type different from xml return type</li>
+</ul>
+<strong>3.2.4</strong>
+<ul>
+<li>[IMPROVE]check resultMap columns支持更复杂的resultmap检测</li>
+<li>[FIX]用户禁用了kotlin插件导致的#{}没有代码提示</li>
+<li>[IMPROVE]支持idea社区版在xml上填入参数预览sql</li>
+<li>[IMPROVE]使用convertTextToSql不再限制sql的长度</li>
+<li>[NEW]方法名生成sql支持mybatis flex框架</li>
+</ul>
+<ul>
+<li>[IMPROVE]check resultMap columns support more complex resultmap</li>
+<li>[FIX]fix completion on #{} when disable kotlin plugin</li>
+<li>[IMPROVE]support preview xml on intellij community version</li>
+<li>[IMPROVE]convert log to sql wont limit sql length</li>
+</ul>
+<strong>3.2.3</strong>
+<ul>
+<li>[NEW]like语句后面提示likeUserName这种并且直接bind好</li>
+<li>[FIX]select * 不再提示把column加到resultMap中</li>
+<li>[FIX]部分用户密文失败修复</li>
+<li>[FIX]mybatis log linux系统临时文件夹问题</li>
+<li>[IMPROVE]修复使用老版本api annotator可能会导致的性能问题</li>
+</ul>
+<ul>
+<li>[NEW]after like statement will auto bind</li>
+<li>[FIX]mybatis log linux temp folder issue</li>
+<li>[IMPROVE]fix potential performance issue</li>
+</ul>
+<strong>3.2.2</strong>
+<ul>
+<li>[NEW]支持#{}中使用数组操作符解析</li>
+<li>[IMPROVE]jdbcType会根据java类型来优先提示</li>
+<li>[NEW]检测查询的字段但是resultMap或者resultType中没有并且可以一键加过去</li>
+<li>[IMPROVE]支持mybatis generator配置xml后缀</li>
+<li>[NEW]支持jakarta注解</li>
+<li>[IMPROVE]方法名生成sql支持resultMap extends</li>
+<li>[New]从方法名生成到mybatisplus的QueryWrapper</li>
+<li>[NEW]生成testcase支持生成到mybatisplus</li>
+</ul>
+<ul>
+<li>[NEW]support #{} use array[] operation</li>
+<li>[NEW]detect select column not in resultMap or resultType, can add them quickly to resultMap or resultType</li>
+<li>[IMPROVE]support mybatis generator configure xml suffix</li>
+<li>[NEW]support jakarta annotation</li>
+<li>[IMPROVE]method name to sql support resultMap extends</li>
+<li>[New]mybatis plus method name to QueryWrapper</li>
+<li>[NEW]generate testcase support mybatisplus</li>
+</ul>
+<strong>3.2.1</strong>
+<ul>
+<li>[New]一键将cdata语句转换为&amp;gt;&amp;lt;这种方便SQL进行代码提示</li>
+<li>[New]xml上右键可以转换sql到xml,将大于号小于号转换为&amp;lt;&amp;gt;这种</li>
+<li>[FIX]controller模版import修复</li>
+<li>[FIX]部分机器离线激活出错</li>
+<li>[IMPROVE]mybatis log点击parameter log到相同的文件</li>
+<li>[IMPROVE]resultMap上autoMapProperty会根据java实体类字段的顺序来匹配 </li>
+</ul>
+<ul>
+<li>[New]convert cdata to &amp;gt;&amp;lt; for sql code completion</li>
+<li>[New]right click on xml to convert cdata to &amp;lt;&amp;gt;</li>
+<li>[FIX]fix controller template import</li>
+<li>[IMPROVE]mybatis log click parameter log to same file</li>
+<li>[IMPROVE]resultMap autoMapProperty will keep the order of java class field </li>
+</ul>
+<strong>3.2.0</strong>
+<ul>
+<li>[New]支持在map或map.entry类型上foreach</li>
+<li>[FIX]修复注解script标签解析依赖kotlin插件</li>
+<li>[FIX]生成代码结束的时候有可能导致项目卡住</li>
+<li>[FIX]exception修复</li>
+</ul>
+<ul>
+<li>[New]support using collection foreach on map or map.entry type</li>
+<li>[FIX]fix annotation sql with script depend on kotlin plugin</li>
+<li>[FIX]performance issue after generate code</li>
+<li>[FIX]exception fix</li>
+</ul>
+<strong>3.1.9</strong>
+<ul>
+<li>[New]支持xml调用枚举或者static变量上的方法解析</li>
+<li>[NEW]从模版文件生成代码代码提示支持</li>
+<li>[NEW]支持kotlin注解sql</li>
+<li>[FIX]mybatis xml未被使用的检测默认开启</li>
+<li>[FIX]findByXXBetween当if test null and empty勾选时生成问题</li>
+<li>[FIX]社区版使用mybatis database 自定义driver路径报错的问题</li>
+</ul>
+<ul>
+<li>[NEW]support xml use static field or enum with method</li>
+<li>[NEW]code completion when use template to generate</li>
+<li>[NEW]support kotlin annotation sql</li>
+<li>[FIX]mybatis xml unused check enable by default</li>
+<li>[FIX]findByXXBetween when if test null and empty is selected generate problem</li>
+<li>[FIX]community version use mybatis database driver jar error</li>
+</ul>
+<strong>3.1.8</strong>
+<ul>
+<li>[FIX]兼容2023.1最新eap版本</li>
+<li>[NEW]支持自定义lombok注解</li>
+<li>[IMPROVE]if test代码提示优化</li>
+<li>[IMPROVE]xml性能优化</li>
+<li>[NEW]迁移到模版生成代码</li>
+</ul>
+<ul>
+<li>[FIX]compatability for 2023.1 eap version</li>
+<li>[NEW]support customize lombok annotation</li>
+<li>[IMPROVE]if test completion improve</li>
+<li>[IMPROVE]xml performance improve</li>
+</ul>
+<strong>3.1.7</strong>
+<ul>
+<li>[FIX]兼容2023.1 eap版本</li>
+<li>[FIX]修复部分用户激活问题</li>
+</ul>
+<ul>
+<li>[FIX]compatability for 2023.1 eap version</li>
+</ul>
+<strong>3.1.6</strong>
+<ul>
+<li>[FIX]修复xml添加注释或空格高亮失效</li>
+<li>[NEW]xml测试sql添加All if test true和All if test false</li>
+<li>[NEW]生成代码支持生成javax注解@NotNull@Size</li>
+<li>[NEW]支持oracle批量插入语句生成</li>
+<li>[IMPROVE]inspection性能优化</li>
+<li>[FIX]修复getBean方法exception</li>
+</ul>
+
+<ul>
+    <li>[FIX]fix highlight loss when edit xml</li>
+    <li>[NEW]test sql add All if test true and All if test false Action</li>
+    <li>[NEW]support generate javax @NotNull @Size annotation</li>
+    <li>[IMPROVE]code inspection performance</li>
+    <li>[FIX]fix getBean method exception</li>
+</ul>
+<strong>3.1.5</strong>
+<ul>
+    <li>[NEW]support parse $ statement by xml tag comment</li>
+    <li>[FIX]fix spring mapperscan exception throw when use +</li>
+    <li>[NEW]add button to expand * and ** packages to package list</li>
+    <li>[IMPROVE]support completion for static field in super class</li>
+    <li>[FIX]exception when use intention preview</li>
+    <li>[IMPROVE]community version can set driver class and driver path</li>
+</ul>
+
+<ul>
+    <li>1.支持通过xml标签上的注释来解析$表达式</li>
+    <li>2.修复当mapperScan使用+号的报错</li>
+    <li>3.提供按钮可以一键把*和**的typeAlias转换为具体包名</li>
+    <li>4.支持自动提示父类中的static final字段</li>
+    <li>5.修复开启intention preview的代码报错</li>
+    <li>6.idea社区版生成代码数据库支持配置驱动</li>
+</ul>
+<strong>3.1.3</strong>
+<ul>
+<li>[NEW]support java annotation script tag</li>
+<li>[NEW]sql log jump to xml</li>
+<Li>[FIX]method name use insertList and insertSelective when resultmap not complete exception</Li>
+<li>[NEW]support kotlin mapper scan spring injection</li>
+<li>[NEW]support resulthandler type check</li>
+<li>[IMPROVE]better completion for ognl and #{}</li>
+</ul>
+<ul>
+<li>1.支持java注解中使用script的识别</li>
+<li>2.可以从日志跳转到xml</li>
+<li>3.方法名insertList和insertSelective当属性不一致exception修复</li>
+<li>4.支持kotlin mapperscan spring注入</li>
+<li>5.支持resulthandler类型的检测</li>
+<li>6.代码提示优化</li>
+</ul>
+<strong>3.1.2</strong>
+<ul>
+<li>[NEW]add option for sql tag auto detect prefix and suffix</li>
+<li>[NEW]resultMap add check column menu to check unused column in resultMap related select statement</li>
+<Li>[NEW]support icon for base class to xml</Li>
+<li>[NEW]support select * in resultMap auto map and check column</li>
+<li>[NEW]support to check mybatis interface unused method</li>
+</ul>
+<ul>
+<li>1.添加菜单可以自动识别sql标签的前后缀</li>
+<li>2.resultMap添加check column菜单来识别当前resultMap对应的select语句里面未使用的列</li>
+<li>3.从基类跳转到xml图标支持</li>
+<li>4.resultMap auto map和check column支持识别 select * </li>
+<li>5.支持检测mybatis接口中未使用的方法</li>
+</ul>
+<strong>3.1.1</strong>
+<ul>
+<li>[FIX]fix when generate test case line seprator issue</li>
+</ul>
+<ul>
+<li>1.修复生成testcase时生成换行符exception</li>
+</ul>
+<strong>3.1.0</strong>
+<ul>
+<li>[FIX]when open intention preview, create select statement multiple times</li>
+</ul>
+<ul>
+<li>1.修复开启intention preview, create select statement重复创建的问题</li>
+</ul>
+<strong>3.0.9</strong>
+<ul>
+<li>[NEW]mybatis generator save configuration</li>
+<li>[NEW]mybatis generator configuration export to json and import from json</li>
+<li>[NEW]support xml include with bind names</li>
+<li>[NEW]mybatis generator will read line separator from intellij</li>
+<li>[FIX]some formatter issue</li>
+<li>[FIX]make string null and empty when reference to field and parameter</li>
+<li>[IMPROVE] $ replace sql support more pattern</li>
+</ul>
+<ul>
+<li>1.mybatis generator支持保存配置，导入导出配置</li>
+<li>2.支持xml include带bind变量的解析</li>
+<li>3.一键string判断null和空支持当值来自于字段或者方法参数</li>
+<li>4.bug修复
+</ul>
+<strong>3.0.8</strong>
+<ul>
+<li>[FIX]string exception when mybatis log has no parameter</li>
+<li>[FIX]mybatis log too many memory issue</li>
+<li>[NEW]support generate all column sql using template</li>
+</ul>
+<ul>
+<li>1.修复mybatis log当没有参数时的报错</li>
+<li>2.修复mybatis log数量太多时内存占用问题</li>
+<li>3.表上右键generate all column sql 可以通过模版来生成</li>
+</ul>
+<strong>3.0.7</strong>
+<ul>
+<li>[FIX]mybatis interface generate xml when selected interface class name</li>
+<li>[IMPROVE]mybatis plus generate updateByPrimaryKeySelective</li>
+<li>[IMPROVE]mybatis plus typehandler will add to model class</li>
+<li>[IMPROVE]resultMap column auto completion when use with statement</li>
+<li>[IMPROVE]support swagger3 openapi annotation</li>
+<li>[IMPROVE]support disable param1,param2 like auto completion</li>
+<li>[FIX]fix deadLock exception</li>
+<li>[FIX]fix mybatis log parameter line contain multiple ending space to sql</li>
+</ul>
+<ul>
+<li>1.修复从接口类生成xml选中类名无法生成</li>
+<li>2.优化mybatisplus生成updateByPrimaryKeySelective</li>
+<li>3.mybatisplus定制列中配置的typehandler会生成到TableField注解上</li>
+<li>4.select使用with语句的resultMap column自动提示的解析</li>
+<li>5.表上生成代码支持swagger3，openapi</li>
+<li>6.支持配置禁用param1,param2这种代码提示</li>
+<li>7.修复deadLock异常</li>
+<li>8.修复mybatis log 部分情况无法解析问题</li>
+</ul>
+<strong>3.0.6</strong>
+<ul>
+<li>[FIX]sql log parameter contain null value logged sql is null</li>
+<li>[IMPROVE]module name can be searched and other ui improvement</li>
+<li>[FIX]move annotation to xml when xml not exist generate xml issue</li>
+<li>[IMPROVE]create xml for mapper interface</li>
+</ul>
+<ul>
+<li>1.修复sql log 参数值包含null时解析的问题</li>
+<li>2.表上生成代码功能module名可以进行搜索和一些其他ui优化</li>
+<li>3.修复从注解挪动sql到xml时，xml不存在创建xml</li>
+<li>4.优化从接口从生成xml触发问题</li>
+</ul>
+<strong>3.0.5</strong>
+<ul>
+<li>[FIX]fix editor null pointer exception</li>
+</ul>
+<ul>
+<li>1.修复editor为null的exception</li>
+</ul>
+<strong>3.0.4</strong>
+<ul>
+<li>[FIX]sql log remove duplicate not work in some case</li>
+<li>[FIX]sql log support more pattern</li>
+<li>[FIX]sql log support multi insert ect</li>
+<li>[IMPROVE]better ui</li>
+</ul>
+<ul>
+<li>1.修复sql log移除重复的sql某些情况不生效的问题</li>
+<li>2.sql log兼容各种sql</li>
+<li>3.sql log支持批量模式，一个parepare 多个parameter那种模式</li>
+<li>4.更好的ui</li>
+</ul>
+<strong>3.0.3</strong>
+<ul>
+<li>[NEW]支持resultmap中使用constructor，提供自动提示，检测等</li>
+<li>[IMPROVE]controller的模版可以自动提示</li>
+<li>[IMPROVE]更好的性能</li>
+<li>[NEW]mybatis日志转sql支持</li>
+<li>[IMPROVE]支持清除表缓存</li>
+<li>[FIX]修复idea社区版表生成代码出错 当表含有数据库关键字时</li>
+</ul>
+<strong>3.0.2</strong>
+<ul>
+<li>[NEW]支持mybatis注解使用常量的解析</li>
+<li>[NEW]支持mybatis注解 #{} 自动提示，检测，重构等</li>
+<li>[FIX]修复intention preview 会自动弹出窗口比如使用 generate testcase时</li>
+<li>[NEW]支持mybatisplus的分页</li>
+<li>[FIX]修复sql标签if test的格式化</li>
+<li>[FIX]支持解析接口参数为* extend 这种泛型</li>
+<li>[FIX]修复typeMapper配置不生效</li>
+</ul>
+<strong>3.0.1</strong>
+<ul>
+<li>[FIX]修复mybatis generator出现null pointer</li>
+</ul>
+<strong>3.0.0</strong>
+<ul>
+<li>[FIX]where和trim等标签在换行光标跳转问题修复</li>
+<li>[NEW]增加typemapper，可以配置java类型和表字段类型的转换关系</li>
+<li>[FIX]修复在xml上右键generate all column转义问题</li>
+<li>[FIX]给复杂类型加一个param注解支持解析父类中的属性</li>
+<li>[NEW]controller模版添加表注释变量</li>
+</ul>
+<strong>2.9.9</strong>
+<ul>
+<li>[FIX]修复xml格式化换行的问题</li>
+<li>[NEW]可配置if test格式化不换行</li>
+<li>[IMPROVE]定制列里面更好的java类型编辑器</li>
+<li>[IMPROVE]生成controller配置src folder和package名可以自动提示</li>
+</ul>
+<strong>2.9.8</strong>
+<ul>
+<li>[NEW]添加配置param中忽略解析的类型</li>
+<li>[NEW]支持ognl数组操作</li>
+<li>[FIX]修复从sql导出java类和resultMap sqlServer出现的exception</li>
+<li>[FIX]修复从sql导出java类和resultMap文件没有刷新</li>
+<li>[NEW]支持mybatis generator只生成java类</li>
+</ul>
+
 <strong>2.9.7</strong>
 <ul>
 <li>[NEW]支持kotlin添加param注解</li>

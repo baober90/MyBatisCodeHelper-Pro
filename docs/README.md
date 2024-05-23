@@ -36,47 +36,52 @@
 
 ## 插件未激活与激活状态的功能比较  未激活版的功能可以免费一直使用下去
 
-功能点  |  未激活版 | 激活版
------   | ------ | -----
-接口与xml互相跳转 更换图标|  ✔ | ✔
-接口方法名重构| ✔| ✔
-一键添加param| ✔| ✔
-xml中的 param的自动提示 resultMap refid 等的自动提示|✔| ✔
-resultMap中的property的自动提示|✔|✔
-检测没有使用的xml 可一键删除|✔|✔
-检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml方法块|✔|✔
-检测resultmap的property是否有误|✔|✔
-支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot|✔|✔
-一键生成分页查询|✔|✔
-代码模版，生成cdata和collection语句|✔|✔
-一键添加resultMap中未被使用的属性| ✔|✔
-一键生成mybatis接口的testcase |✘|✔
-通过方法名生成sql | ✘| ✔
-通过数据库生成crud代码| ✘|✔
-通过java类生成crud代码|✘|✔
-xml collection中的 param提示| ✘|✔
-识别mybatis的标签 全自动sql补全| ✘|✔
-检测#{中的参数是否正确| ✘|✔
-if test when test foreach collection $中的OGNL支持| ✘|✔
-param重构功能(2.7.2)| ✘|✔
-resultMap中column提示与检测(2.7.2)| ✘|✔
-Mybatis xml代码格式化(2.8.2)| ✘|✔
+功能点  | 未激活版 | 激活版
+-----   |------| -----
+接口与xml互相跳转 更换图标| ✔    | ✔
+接口方法名重构| ✔    | ✔
+一键添加param| ✔    | ✔
+xml中的 param的自动提示 resultMap refid 等的自动提示| ✔    | ✔
+resultMap中的property的自动提示| ✔    |✔
+检测没有使用的xml 可一键删除| ✔    |✔
+检测mybatis接口中方法是否有实现，没有则报红 可创建一个空的xml方法块| ✔    |✔
+检测resultmap的property是否有误| ✔    |✔
+支持spring 将mapper注入到spring中 intellij的spring注入不再报错 支持springboot| ✔    |✔
+一键生成分页查询| ✔    |✔
+代码模版，生成cdata和collection语句| ✔    |✔
+一键添加resultMap中未被使用的属性| ✔    |✔
+一键生成mybatis接口的testcase | ✘    |✔
+通过方法名生成sql | ✘    | ✔
+通过数据库生成crud代码| ✘    |✔
+通过java类生成建表语句| ✘    |✔
+xml collection中的 param提示| ✘    |✔
+识别mybatis的trim where include等标签 全自动sql补全| ✘    |✔
+检测#{中的参数是否正确| ✘    |✔
+if test when test foreach collection $中的OGNL支持| ✘    |✔
+param重构功能(2.7.2)| ✘    |✔
+resultMap中column提示与检测(2.7.2)| ✘    |✔
+Mybatis xml代码格式化(2.8.2)| ✘    |✔
+从sql生成resultMap和java类 | ✘    |✔
+从sql直接生成mybatis xml和java接口方法 | ✘    |✔
 
-可以免费试用: http://brucege.com/
+可以免费试用: http://brucege.com/pay/view
 
 之后会加入更多功能
 
 ## 联系我
 - 加入qq群 由于Intellij插件市场需要两天审核  插件的bug修复 最新版本 会先放在qq群中 出现任何问题可在qq群反馈
 
-1群 542735979(人满)
-![qqGroup](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/qqgroup.png)
-2群: 914051156 (人满)
-3群：598080979
+![qqGroup](https://images.brucege.com/qq5New.png)
+2群: 914051156 (人满)  
+3群：598080979 (人满)  
+4群：232578741 (人满)
+5群: 575733084
+1群备份: 789681969    
+或者添加qq号:1098632410  
 
 - 或者添加我的微信:
 
-![weichaturl](https://gejun123456.coding.net/p/MyBatisCodeHelper-Pro/d/MyBatisCodeHelper-Pro/git/raw/master/screenshots/wechatme.png)
+![weichaturl](https://images.brucege.com/wechatme.png)
 
 该项目使用了或参考了以下项目:
 
@@ -92,6 +97,8 @@ mybatis-generator-gui: https://github.com/zouzg/mybatis-generator-gui
 
 mybatis generator plugin: https://github.com/itfsw/mybatis-generator-plugin
 
+batlog: https://github.com/PerccyKing/batslog
+
 如果您是这些项目的作者，请联系我，我将发送免费的永久key给您
 
 截图中的项目来自[https://github.com/gejun123456/codehelperPluginDemo](https://github.com/gejun123456/codehelperPluginDemo)
@@ -101,6 +108,7 @@ mybatis generator plugin: https://github.com/itfsw/mybatis-generator-plugin
 
 
 [plugin]: https://plugins.jetbrains.com/plugin/9837
+
 
 
 

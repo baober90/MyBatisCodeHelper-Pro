@@ -28,7 +28,7 @@ No need to start spring context to test your sql, faster check sql error.
 
 ## Generate java class and ResultMap from sql
 
-![generateJavaClassAndResultMap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateJavaClassAndResultMap.gif)
+![generateJavaClassAndResultMap](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/generateJavaClassFromSelect.gif)
 
 
 ## Generate page query （depend on pageHelper)
@@ -52,3 +52,12 @@ Generate result and column for join statement
 ![GenerateJavaSetterFromTableRow](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/GenerateJavaSetterFromTableRow.gif)
 
 
+## make sql if test string!=null to if test string!=null and string !=''
+
+show context action in xml use Make All String Compare To Null Change to Null And Empty In Current Sql
+![StringNullAndEmpty](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/stringNullAndEmtpy.png)
+
+
+
+## add param to complex type
+![AddParamToComplexType](https://raw.githubusercontent.com/gejun123456/MyBatisCodeHelper-Pro/master/screenshots/AddparamToComplexType.gif)
